@@ -1,0 +1,5 @@
+Creation
+2025-08-26
+
+Created with Xcode 16.4 as SwiftUI Application for Mac only, no testing.
+
