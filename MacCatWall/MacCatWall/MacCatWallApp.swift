@@ -2,7 +2,7 @@
 //  MacCatWallApp.swift
 //  MacCatWall
 //
-//  Created by Andrew Dent on 26/8/2025.
+//  Created by Andy Dent on 26/8/2025.
 //
 
 import SwiftUI

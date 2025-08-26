@@ -3,7 +3,9 @@ Building a paywall for RevenueCat macOS SwiftUI.
 
 As of [April 2025][rc1] there was no official paywall product for SwiftUI macOS apps.
 
-This repo contains results of [asking ChatGPT5][gpt1] to generate SwiftUI code to match two existing screens and the refinement of that into a working app. To simplify things, it's just being built as a macOS app.
+This repo contains results of [asking ChatGPT5][gpt1] to generate SwiftUI code to match two existing screens and the refinement of that into a working app. The GPT session essentials are copied below with the code preserved in a separate subdirectory.
+
+To simplify things, it's just being built as a macOS app.
 
 
 ## Paywall screenshots from iOS
@@ -52,10 +54,11 @@ struct MyApp: App {
 }
 ```
 
-    - In your RevenueCat dashboard, create 3 products matching the Apple product identifiers you’ve set up:
-        - `pro_monthly`
-        - `pro_annual`
-        - `pro_lifetime`
+- In your RevenueCat dashboard, create 3 products matching the Apple product identifiers you’ve set up:
+    - `pro_monthly`
+    - `pro_annual`
+    - `pro_lifetime`
+
         
 2. Hook into PaywallView
 

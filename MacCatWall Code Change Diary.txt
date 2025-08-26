@@ -3,3 +3,9 @@ Creation
 
 Created with Xcode 16.4 as SwiftUI Application for Mac only, no testing.
 
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+Include and build generated paywall
+2025-08-26
+
+PaywallView.swift
+- added just paste in the GPT output
