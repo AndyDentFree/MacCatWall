@@ -36,19 +36,8 @@ struct PaywallView: View {
     // Replace "HeaderArt" with your asset. A gradient placeholder is provided.
     var headerArt: some View {
         ZStack {
-            LinearGradient(
-                colors: [.orange.opacity(0.95), .cyan, .orange.opacity(0.95)],
-                startPoint: .leading, endPoint: .trailing
-            )
-            .mask(
-                HStack(spacing: 0) {
-                    Rectangle().cornerRadius(4)
-                    Rectangle().cornerRadius(4)
-                    Rectangle().cornerRadius(4)
-                }
-            )
+            Image("PaywallHero")
         }
-        .frame(height: 210)
         .overlay(alignment: .topTrailing) {
             Button {
                 dismiss()
@@ -289,10 +278,6 @@ struct PaywallView_Previews: PreviewProvider {
         Group {
             PaywallView()
                 .preferredColorScheme(.dark)
-
-            PaywallView()
-                .preferredColorScheme(.dark)
-                .previewDevice("iPhone SE (3rd generation)")
         }
     }
 }

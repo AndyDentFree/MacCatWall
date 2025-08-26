@@ -78,6 +78,15 @@ See [source in git][gh1]
 * The Restore purchases footer link calls restorePurchases().
 * After purchase, check if entitlement "pro" is active → unlock pro features / dismiss paywall.
 
+
+## Comments on the generated code
+My mistake - one screenshot was scrolled so the heading "Pro purrers do more with\ntheir designs" only appears on one tab and the generated SwiftUI reflects that.
+
+### Hero image
+They don't replicate the common hero image but created code with a gradient roughly matching the colours instead.
+
+
+
 [rc1]: https://community.revenuecat.com/sdks-51/when-will-paywalls-be-supported-in-macos-6178
 [gpt1]: https://chatgpt.com/share/68ad9044-c144-8011-9c55-f3c335eb6227
 [gh1]: https://github.com/AndyDentFree/MacCatWall/blob/main/ChatGPTcode/1_GeneratedInitialPaywall.swift
