@@ -83,7 +83,22 @@ See [source in git][gh1]
 My mistake - one screenshot was scrolled so the heading "Pro purrers do more with\ntheir designs" only appears on one tab and the generated SwiftUI reflects that.
 
 ### Hero image
-They don't replicate the common hero image but created code with a gradient roughly matching the colours instead.
+They don't replicate the common hero image but created code with a gradient roughly matching the colours instead. That's pretty reasonable and easily fixed.
+
+
+## Notes on how the UI works
+
+### Custom colours
+We have two _signature colours_ but they are used in different ways in dark vs light modes so also combine them both in the `OutlineFeature` asset colour.
+
+| **ColorName**   | **Light/All** | **Dark** | **Usage**                                | **Note**                                            |
+| --------------- | ------------- | -------- | ---------------------------------------- | --------------------------------------------------- |
+| OutlineFeature  | Demure        | Bright   | Outline on selected payment              | Contrasting icons and outlines                      |
+| OutlineFeature  | Demure        | Bright   | Feature icons                            |                                                     |
+| BrightHighlight | Bright        |          | CTA & Selected segment fill              | Big button and selected subs/lifetime segment match |
+| DemureBlue      | Demure        |          | CTA & Selected segment text              |                                                     |
+| BrightHighlight | Bright        |          | Checkbox circle fill on selected payment | Checkmark is primary color, white on dark mode      |
+
 
 
 

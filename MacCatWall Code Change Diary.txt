@@ -9,3 +9,40 @@ Include and build generated paywall
 
 PaywallView.swift
 - added just paste in the GPT output
+
+
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+Change hero image
+2025-08-26
+
+Assets.xcassets
+- added PaywallHero
+
+PaywallView
+- headerArt replace LinearGradient with image
+
+
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+Main layout fixes - now has desired look but not connected to RevenueCat
+2025-08-27
+
+Assets.xcassets
+- added colors sometimes repeating, so they are there for different roles vs light/dark
+  - OutlineFeatures used for outline & check background on selected panel and the feature icons
+- single-mode BrightHighlight and DemureBlue
+
+PaywallView
+- Apply new colors from assets including OutlineFeatures so have different in dark/light
+- Remove most hardcoded white and black colors so correct system defaults in dark/light
+- Remove most of the ZStacks
+- Remove .clipShape on header
+- Remove ""// Fake stacked cards behind the header" which was ChatGPT noticing the screenshot shows the paywall presented in a modal sheet
+- Remove bizarre .onChange(of: selectedTab) logic as that's all handled by the binding
+- Replace hardcoded font sizes with use of system styles
+- FeatureRow
+  - add .multilineTextAlignment(.leading)
+  - overlays vary stroke color by isSeleected
+  - simplify circle drawing, use SFSymbol conditional on isSeleected
+
+ColorCrossPlatformExtensions.swift
+- added so have systemBackground can use on both
