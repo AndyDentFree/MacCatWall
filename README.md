@@ -87,6 +87,8 @@ See [source in git][gh1]
 - The fonts are all explicit sizing - try asking it to deduce matching standard system styles.
 - ChatGPT _loves_ `ZStack` and adds them in completely unnecessarily.
 - It seems to have no understanding of dark/light mode awareness but, to be fair, I didn't prompt for that. Some stuff I simplified by using asset colors.
+- No awareness of wrapping to fit - it generated embedded newline characters in strings rather than just leaving them to wrap. I also had to add `.multilineTextAlignment(.leading)` in a few places to get multi-line text.
+- It built a very complicated `onChange(of:...` handler for reacting to tab changes that was completely unnecessary when a simple value being changed to match the `.tag` was already being used in the SwiftUI. (Feels like ChatGPT has possibly been learning from some very naive code. It's the kind of thing that supports the argument that it is **not understanding, just extrapolating patterns**).
 
 ### Hero image
 They don't replicate the common hero image but created code with a gradient roughly matching the colours instead. That's pretty reasonable and easily fixed.
