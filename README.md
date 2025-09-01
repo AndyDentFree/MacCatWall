@@ -7,6 +7,7 @@ This repo contains results of [asking ChatGPT5][gpt1] to generate SwiftUI code t
 
 To simplify things, it's just being built as a macOS app.
 
+See also `MacCatWall Code Chage Diary.txt` for detailed logs of what was changed, which were copied into the git logs as code committed, but that gives you one place to scroll through.
 
 ## Paywall screenshots from iOS
 These screenshots from the [Purrticles app][p1] on iOS were used to prompt chat.
@@ -80,7 +81,12 @@ See [source in git][gh1]
 
 
 ## Comments on the generated code
-My mistake - one screenshot was scrolled so the heading "Pro purrers do more with\ntheir designs" only appears on one tab and the generated SwiftUI reflects that.
+- My mistake - one screenshot was scrolled so the heading "Pro purrers do more with\ntheir designs" only appears on one tab and the generated SwiftUI reflects that.
+- Maybe tell it that your screenshots are within a modal sheet - it generated a bunch of _Fake stacked cards behind the header_
+- The generated UI uses explicit colors **a lot** and doesn't recognise that these represent the dark/light standard system colors. Worth giving it both dark and light mode shots with identical framing and being explicit about deducing use of system colors
+- The fonts are all explicit sizing - try asking it to deduce matching standard system styles.
+- ChatGPT _loves_ `ZStack` and adds them in completely unnecessarily.
+- It seems to have no understanding of dark/light mode awareness but, to be fair, I didn't prompt for that. Some stuff I simplified by using asset colors.
 
 ### Hero image
 They don't replicate the common hero image but created code with a gradient roughly matching the colours instead. That's pretty reasonable and easily fixed.
