@@ -5,9 +5,9 @@ As of [April 2025][rc1] there was no official paywall product for SwiftUI macOS 
 
 This repo contains results of [asking ChatGPT5][gpt1] to generate SwiftUI code to match two existing screens and the refinement of that into a working app. The GPT session essentials are copied below with the code preserved in a separate subdirectory.
 
-To simplify things, it's just being built as a macOS app.
+To simplify things, it's just being built as a macOS app. As of 2025-09-29, you can **see the full live version** in [Purrticles on Mac][as1].
 
-See also `MacCatWall Code Chage Diary.txt` for detailed logs of what was changed, which were copied into the git logs as code committed, but that gives you one place to scroll through.
+See also `MacCatWall Code Change Diary.txt` for detailed logs of what was changed, which were copied into the git logs as code committed, but that gives you one place to scroll through.
 
 ## Paywall screenshots from iOS
 These screenshots from the [Purrticles app][p1] on iOS were used to prompt chat.
@@ -117,3 +117,5 @@ We have two _signature colours_ but they are used in different ways in dark vs l
 
 [p1]:  https://www.touchgram.com/purrticles
 [p3]: https://www.reddit.com/r/purrticles/
+
+[as1]: https://apps.apple.com/us/app/purrticles-effects-designer/id1664770790
